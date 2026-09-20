@@ -1,0 +1,20 @@
+<Project>
+  <PropertyGroup>
+    <!-- Product version -->
+    <VersionMajor>1</VersionMajor>
+    <VersionMinor>3</VersionMinor>
+    <VersionPatch>2</VersionPatch>
+
+    <!-- Optional pre-release label -->
+    <!--<VersionPreRelease>-beta1</VersionPreRelease>-->
+
+    <!-- Construct full version -->
+    <Version>$(VersionMajor).$(VersionMinor).$(VersionPatch)</Version>
+    <PackageVersion>$(Version)$(VersionPreRelease)</PackageVersion>
+
+    <!-- Assembly versioning -->
+    <AssemblyVersion>$(VersionMajor).0.0.0</AssemblyVersion>
+    <FileVersion>$(Version)</FileVersion>
+    <InformationalVersion>$(PackageVersion)</InformationalVersion>
+  </PropertyGroup>
+</Project>
